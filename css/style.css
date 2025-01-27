@@ -1,11 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Playwrite+IN:wght@100..400&display=swap');
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Questrial", sans-serif;
+  font-family: "Calistoga", serif;
   background: #f89cf2;
   display: flex;
   flex-direction: column;
@@ -22,7 +21,7 @@ h1 {
 .screen {
   cursor: pointer;
   width: 60%;
-  background-color: #f3246c !important;
+  background-color: transparent;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -44,3 +43,28 @@ h1 {
   background: transparent;
   cursor: pointer;
 }
+
+/* Select the class controls and fa-play */
+.controls .fa-play {
+  color: #28a745;
+}
+
+/* Select the controls and fa-stop */
+.controls .fa-stop {
+  color: #ff0018;
+}
+/* Select the controls and fa-pause (which we will create in JS */
+.controls .fa-pause {
+  color: #fff;
+}
+
+.controls .timestamp {
+  color: #fff;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+/* Remove the outline when clicking the button */
+.btn:focus {
+    outline: 0;
+  }
